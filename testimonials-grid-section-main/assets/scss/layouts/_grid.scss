@@ -1,0 +1,27 @@
+// Grid layout !DUH! HAHA! Just kidding
+
+@mixin grid-layout(
+  $grid: grid,
+  $grid-template-columns: 340px,
+  $grid-template-rows: 400px 250px 250px 400px 550px,
+  $place-center: center,
+  $row-gap: 20px
+) {
+  display: $grid;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: $grid-template-rows;
+  place-content: $place-center;
+  gap: 30px;
+}
+
+//This is the grid of the media query
+
+@mixin grid-query(
+  $grid: grid,
+  $grid-template-columns: 250px 250px 250px 250px,
+  $grid-template-rows: 300px 300px
+) {
+  display: $grid;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: $grid-template-columns;
+}
